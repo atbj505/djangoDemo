@@ -6,4 +6,5 @@ from . import views
 
 urlpatterns = [
     url('^$', views.index, name='index'),
+    url('^/tribute', views.tribute, name='tribute')
 ]
