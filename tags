@@ -1,0 +1,112 @@
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_FILE_SORTED	1	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_PROGRAM_AUTHOR	Darren Hiebert	/dhiebert@users.sourceforge.net/
+!_TAG_PROGRAM_NAME	Exuberant Ctags	//
+!_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
+!_TAG_PROGRAM_VERSION	5.8	//
+ALLOWED_HOSTS	mysite/mysite/settings.py	/^ALLOWED_HOSTS = []$/;"	v
+AUTH_PASSWORD_VALIDATORS	mysite/mysite/settings.py	/^AUTH_PASSWORD_VALIDATORS = [$/;"	v
+AppConfig	mysite/polls/apps.py	/^from django.apps import AppConfig$/;"	i
+BASE_DIR	mysite/mysite/settings.py	/^BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))$/;"	v
+Choice	mysite/polls/models.py	/^class Choice(models.Model):$/;"	c
+Choice	mysite/polls/views.py	/^from models import Question, Choice$/;"	i
+DATABASES	mysite/mysite/settings.py	/^DATABASES = {$/;"	v
+DEBUG	mysite/mysite/settings.py	/^DEBUG = True$/;"	v
+DetailView	mysite/polls/views.py	/^class DetailView(generic.DetailView):$/;"	c
+HttpResponseRedirect	mysite/polls/views.py	/^from django.http import HttpResponseRedirect$/;"	i
+INSTALLED_APPS	mysite/mysite/settings.py	/^INSTALLED_APPS = [$/;"	v
+IndexView	mysite/polls/views.py	/^class IndexView(generic.ListView):$/;"	c
+LANGUAGE_CODE	mysite/mysite/settings.py	/^LANGUAGE_CODE = 'en-us'$/;"	v
+MIDDLEWARE	mysite/mysite/settings.py	/^MIDDLEWARE = [$/;"	v
+Migration	mysite/polls/migrations/0001_initial.py	/^class Migration(migrations.Migration):$/;"	c
+PollsConfig	mysite/polls/apps.py	/^class PollsConfig(AppConfig):$/;"	c
+Question	mysite/polls/models.py	/^class Question(models.Model):$/;"	c
+Question	mysite/polls/tests.py	/^from polls.models import Question$/;"	i
+Question	mysite/polls/views.py	/^from models import Question, Choice$/;"	i
+QuestionIndexViewTests	mysite/polls/tests.py	/^class QuestionIndexViewTests(TestCase):$/;"	c
+QuestionModelTests	mysite/polls/tests.py	/^class QuestionModelTests(TestCase):$/;"	c
+ROOT_URLCONF	mysite/mysite/settings.py	/^ROOT_URLCONF = 'mysite.urls'$/;"	v
+ResultsView	mysite/polls/views.py	/^class ResultsView(generic.DetailView):$/;"	c
+SECRET_KEY	mysite/mysite/settings.py	/^SECRET_KEY = 'w%d$(sn-v2pah9v4&p_@4p_$5!k^uc4sufq67i%$8@az_9+zrj'$/;"	v
+STATIC_URL	mysite/mysite/settings.py	/^STATIC_URL = '\/static\/'$/;"	v
+TEMPLATES	mysite/mysite/settings.py	/^TEMPLATES = [$/;"	v
+TIME_ZONE	mysite/mysite/settings.py	/^TIME_ZONE = 'Asia\/Shanghai'$/;"	v
+TestCase	mysite/polls/tests.py	/^from django.test import TestCase$/;"	i
+USE_I18N	mysite/mysite/settings.py	/^USE_I18N = True$/;"	v
+USE_L10N	mysite/mysite/settings.py	/^USE_L10N = True$/;"	v
+USE_TZ	mysite/mysite/settings.py	/^USE_TZ = True$/;"	v
+WSGI_APPLICATION	mysite/mysite/settings.py	/^WSGI_APPLICATION = 'mysite.wsgi.application'$/;"	v
+__str__	mysite/polls/models.py	/^    def __str__(self):$/;"	m	class:Choice	file:
+__str__	mysite/polls/models.py	/^    def __str__(self):$/;"	m	class:Question	file:
+admin	mysite/mysite/urls.py	/^from django.contrib import admin$/;"	i
+admin	mysite/polls/admin.py	/^from django.contrib import admin$/;"	i
+app_name	mysite/polls/urls.py	/^app_name = 'polls'$/;"	v
+application	mysite/mysite/wsgi.py	/^application = get_wsgi_application()$/;"	v
+choice_text	mysite/polls/models.py	/^    choice_text = models.CharField(max_length=200)$/;"	v	class:Choice
+context_object_name	mysite/polls/views.py	/^    context_object_name = 'latest_question_list'$/;"	v	class:IndexView
+create_question	mysite/polls/tests.py	/^def create_question(question_text, days):$/;"	f
+datetime	mysite/polls/models.py	/^import datetime$/;"	i
+datetime	mysite/polls/tests.py	/^import datetime$/;"	i
+db	mysite/polls/migrations/0001_initial.py	/^import django.db.models.deletion$/;"	i
+deletion	mysite/polls/migrations/0001_initial.py	/^import django.db.models.deletion$/;"	i
+dependencies	mysite/polls/migrations/0001_initial.py	/^    dependencies = [$/;"	v	class:Migration
+django	mysite/manage.py	/^            import django$/;"	i
+django	mysite/polls/migrations/0001_initial.py	/^import django.db.models.deletion$/;"	i
+execute_from_command_line	mysite/manage.py	/^        from django.core.management import execute_from_command_line$/;"	i
+field	mysite/polls/migrations/0001_initial.py	/^            field=models.ForeignKey(on_delete=django.db.models.deletion.CASCADE, to='polls.Question'),$/;"	v	class:Migration
+fields	mysite/polls/migrations/0001_initial.py	/^            fields=[$/;"	v	class:Migration
+generic	mysite/polls/views.py	/^from django.views import generic$/;"	i
+get_object_or_404	mysite/polls/views.py	/^from django.shortcuts import render, get_object_or_404$/;"	i
+get_queryset	mysite/polls/views.py	/^    def get_queryset(self):$/;"	m	class:IndexView
+get_wsgi_application	mysite/mysite/wsgi.py	/^from django.core.wsgi import get_wsgi_application$/;"	i
+include	mysite/mysite/urls.py	/^from django.conf.urls import url, include$/;"	i
+initial	mysite/polls/migrations/0001_initial.py	/^    initial = True$/;"	v	class:Migration
+migrations	mysite/polls/migrations/0001_initial.py	/^from django.db import migrations, models$/;"	i
+model	mysite/polls/views.py	/^    model = Question$/;"	v	class:DetailView
+model	mysite/polls/views.py	/^    model = Question$/;"	v	class:ResultsView
+model_name	mysite/polls/migrations/0001_initial.py	/^            model_name='choice',$/;"	v	class:Migration
+models	mysite/polls/migrations/0001_initial.py	/^from django.db import migrations, models$/;"	i
+models	mysite/polls/migrations/0001_initial.py	/^import django.db.models.deletion$/;"	i
+models	mysite/polls/models.py	/^from django.db import models$/;"	i
+name	mysite/polls/apps.py	/^    name = 'polls'$/;"	v	class:PollsConfig
+name	mysite/polls/migrations/0001_initial.py	/^            name='Choice',$/;"	v	class:Migration
+name	mysite/polls/migrations/0001_initial.py	/^            name='Question',$/;"	v	class:Migration
+name	mysite/polls/migrations/0001_initial.py	/^            name='question',$/;"	v	class:Migration
+name	mysite/polls/urls.py	/^        name='results'),$/;"	v
+operations	mysite/polls/migrations/0001_initial.py	/^    operations = [$/;"	v	class:Migration
+os	mysite/manage.py	/^import os$/;"	i
+os	mysite/mysite/settings.py	/^import os$/;"	i
+os	mysite/mysite/wsgi.py	/^import os$/;"	i
+pub_date	mysite/polls/models.py	/^    pub_date = models.DateTimeField('date published')$/;"	v	class:Question
+question	mysite/polls/models.py	/^    question = models.ForeignKey(Question, on_delete=models.CASCADE)$/;"	v	class:Choice
+question_text	mysite/polls/models.py	/^    question_text = models.CharField(max_length=200)$/;"	v	class:Question
+render	mysite/polls/views.py	/^from django.shortcuts import render, get_object_or_404$/;"	i
+reverse	mysite/polls/tests.py	/^from django.urls import reverse$/;"	i
+reverse	mysite/polls/views.py	/^from django.urls import reverse$/;"	i
+sys	mysite/manage.py	/^import sys$/;"	i
+template_name	mysite/polls/views.py	/^    template_name = 'polls\/detail.html'$/;"	v	class:DetailView
+template_name	mysite/polls/views.py	/^    template_name = 'polls\/index.html'$/;"	v	class:IndexView
+template_name	mysite/polls/views.py	/^    template_name = 'polls\/results.html'$/;"	v	class:ResultsView
+test_no_question	mysite/polls/tests.py	/^    def test_no_question(self):$/;"	m	class:QuestionIndexViewTests
+test_past_question	mysite/polls/tests.py	/^    def test_past_question(self):$/;"	m	class:QuestionIndexViewTests
+test_was_published_recently_with_future_question	mysite/polls/tests.py	/^    def test_was_published_recently_with_future_question(self):$/;"	m	class:QuestionModelTests
+test_was_published_recently_with_old_question	mysite/polls/tests.py	/^    def test_was_published_recently_with_old_question(self):$/;"	m	class:QuestionModelTests
+test_was_published_recently_with_resent_question	mysite/polls/tests.py	/^    def test_was_published_recently_with_resent_question(self):$/;"	m	class:QuestionModelTests
+timezone	mysite/polls/models.py	/^from django.utils import timezone$/;"	i
+timezone	mysite/polls/tests.py	/^from django.utils import timezone$/;"	i
+timezone	mysite/polls/views.py	/^from django.utils import timezone$/;"	i
+tribute	mysite/polls/views.py	/^def tribute(request):$/;"	f
+unicode_literals	mysite/polls/admin.py	/^from __future__ import unicode_literals$/;"	i
+unicode_literals	mysite/polls/apps.py	/^from __future__ import unicode_literals$/;"	i
+unicode_literals	mysite/polls/migrations/0001_initial.py	/^from __future__ import unicode_literals$/;"	i
+unicode_literals	mysite/polls/models.py	/^from __future__ import unicode_literals$/;"	i
+unicode_literals	mysite/polls/tests.py	/^from __future__ import unicode_literals$/;"	i
+unicode_literals	mysite/polls/views.py	/^from __future__ import unicode_literals$/;"	i
+url	mysite/mysite/urls.py	/^from django.conf.urls import url, include$/;"	i
+url	mysite/polls/urls.py	/^from django.conf.urls import url$/;"	i
+urlpatterns	mysite/mysite/urls.py	/^urlpatterns = [$/;"	v
+urlpatterns	mysite/polls/urls.py	/^urlpatterns = [$/;"	v
+views	mysite/polls/urls.py	/^from . import views$/;"	i
+vote	mysite/polls/views.py	/^def vote(request, question_id):$/;"	f
+votes	mysite/polls/models.py	/^    votes = models.IntegerField(default=0)$/;"	v	class:Choice
+was_published_recently	mysite/polls/models.py	/^    def was_published_recently(self):$/;"	m	class:Question
