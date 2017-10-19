@@ -1,12 +1,13 @@
 # -*- coding: utf-8 -*-
 from __future__ import unicode_literals
 
-from django.shortcuts import render, get_object_or_404
+from django.shortcuts import render, get_object_or_404, render_to_response
 from django.http import HttpResponseRedirect
 from django.urls import reverse
 from django.views import generic
 from models import Question, Choice
 from django.utils import timezone
+import datetime
 
 
 class IndexView(generic.ListView):
@@ -22,6 +23,12 @@ class IndexView(generic.ListView):
 def tribute(request):
     template_name = 'polls/tribute-page.html'
     return render(request, template_name)
+
+
+def current_date(request):
+    template_name = 'polls/current_date.html'
+    now = datetime.datetime.now()
+    return render_to_response(template_name, {"current_date": now})
 
 
 class DetailView(generic.DetailView):

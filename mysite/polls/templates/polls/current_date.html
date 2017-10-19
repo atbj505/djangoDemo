@@ -1,0 +1,6 @@
+{% extends "polls/base.html" %}
+{% block titile %}The current time{% endblock %}
+
+{% block content %}
+    <p>It is now {{ current_date|date:"F j, Y" }}.</p>
+{% endblock %}
