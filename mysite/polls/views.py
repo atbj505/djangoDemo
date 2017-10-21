@@ -5,7 +5,7 @@ from django.shortcuts import render, get_object_or_404, render_to_response
 from django.http import HttpResponseRedirect
 from django.urls import reverse
 from django.views import generic
-from models import Question, Choice
+from polls.models import Question, Choice
 from django.utils import timezone
 import datetime
 
