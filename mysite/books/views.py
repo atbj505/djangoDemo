@@ -20,12 +20,14 @@ def search_form(request):
 
 
 def search(request):
-    if 'q' in request.GET and request.GET['q']:
+    error = False
+    if 'q' in request.GET:
         q = request.GET['q']
-        books = Book.objects.filter(title__icontains=q)
-        return render_to_response('books/search_result.html',
-                                  {'books': books,
-                                   'query': q})
-    else:
-        message = 'You submitted an empty form'
-        return HttpResponse(message)
+        if q:
+            books = Book.objects.filter(title__icontains=q)
+            return render_to_response('books/search_result.html',
+                                      {'books': books,
+                                       'query': q})
+        else:
+            error = True
+    return render_to_response('books/search_form.html', {'error': error})
