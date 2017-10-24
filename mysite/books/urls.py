@@ -7,5 +7,8 @@ from . import views
 app_name = 'books'
 urlpatterns = [
     url('^$', views.index, name='index'),
-    url('^meta/$', views.meta, name='meta')
+    url('^meta/$', views.meta, name='meta'),
+    url('^search_form/$', views.search_form, name='search_form'),
+    url('^search/$', views.search, name='search'),
+    # url('^search_result/$', views.search_result, name='search_result')
 ]

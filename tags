@@ -6,23 +6,36 @@
 !_TAG_PROGRAM_VERSION	5.8	//
 ALLOWED_HOSTS	mysite/mysite/settings.py	/^ALLOWED_HOSTS = []$/;"	v
 AUTH_PASSWORD_VALIDATORS	mysite/mysite/settings.py	/^AUTH_PASSWORD_VALIDATORS = [$/;"	v
+AppConfig	mysite/books/apps.py	/^from django.apps import AppConfig$/;"	i
 AppConfig	mysite/polls/apps.py	/^from django.apps import AppConfig$/;"	i
+Author	mysite/books/admin.py	/^from books.models import Publisher, Author, Book$/;"	i
+Author	mysite/books/models.py	/^class Author(models.Model):$/;"	c
+AuthorAdmin	mysite/books/admin.py	/^class AuthorAdmin(admin.ModelAdmin):$/;"	c
 BASE_DIR	mysite/mysite/settings.py	/^BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))$/;"	v
+Book	mysite/books/admin.py	/^from books.models import Publisher, Author, Book$/;"	i
+Book	mysite/books/models.py	/^class Book(models.Model):$/;"	c
+BookAdmin	mysite/books/admin.py	/^class BookAdmin(admin.ModelAdmin):$/;"	c
+BooksConfig	mysite/books/apps.py	/^class BooksConfig(AppConfig):$/;"	c
 Choice	mysite/polls/models.py	/^class Choice(models.Model):$/;"	c
-Choice	mysite/polls/views.py	/^from models import Question, Choice$/;"	i
+Choice	mysite/polls/views.py	/^from polls.models import Question, Choice$/;"	i
 DATABASES	mysite/mysite/settings.py	/^DATABASES = {$/;"	v
 DEBUG	mysite/mysite/settings.py	/^DEBUG = True$/;"	v
 DetailView	mysite/polls/views.py	/^class DetailView(generic.DetailView):$/;"	c
+HttpResponse	mysite/books/views.py	/^from django.http import HttpResponse$/;"	i
 HttpResponseRedirect	mysite/polls/views.py	/^from django.http import HttpResponseRedirect$/;"	i
 INSTALLED_APPS	mysite/mysite/settings.py	/^INSTALLED_APPS = [$/;"	v
 IndexView	mysite/polls/views.py	/^class IndexView(generic.ListView):$/;"	c
 LANGUAGE_CODE	mysite/mysite/settings.py	/^LANGUAGE_CODE = 'en-us'$/;"	v
 MIDDLEWARE	mysite/mysite/settings.py	/^MIDDLEWARE = [$/;"	v
+Meta	mysite/books/models.py	/^    class Meta:$/;"	c	class:Publisher
+Migration	mysite/books/migrations/0001_initial.py	/^class Migration(migrations.Migration):$/;"	c
 Migration	mysite/polls/migrations/0001_initial.py	/^class Migration(migrations.Migration):$/;"	c
 PollsConfig	mysite/polls/apps.py	/^class PollsConfig(AppConfig):$/;"	c
+Publisher	mysite/books/admin.py	/^from books.models import Publisher, Author, Book$/;"	i
+Publisher	mysite/books/models.py	/^class Publisher(models.Model):$/;"	c
 Question	mysite/polls/models.py	/^class Question(models.Model):$/;"	c
 Question	mysite/polls/tests.py	/^from polls.models import Question$/;"	i
-Question	mysite/polls/views.py	/^from models import Question, Choice$/;"	i
+Question	mysite/polls/views.py	/^from polls.models import Question, Choice$/;"	i
 QuestionIndexViewTests	mysite/polls/tests.py	/^class QuestionIndexViewTests(TestCase):$/;"	c
 QuestionModelTests	mysite/polls/tests.py	/^class QuestionModelTests(TestCase):$/;"	c
 ROOT_URLCONF	mysite/mysite/settings.py	/^ROOT_URLCONF = 'mysite.urls'$/;"	v
@@ -31,58 +44,111 @@ SECRET_KEY	mysite/mysite/settings.py	/^SECRET_KEY = 'w%d$(sn-v2pah9v4&p_@4p_$5!k
 STATIC_URL	mysite/mysite/settings.py	/^STATIC_URL = '\/static\/'$/;"	v
 TEMPLATES	mysite/mysite/settings.py	/^TEMPLATES = [$/;"	v
 TIME_ZONE	mysite/mysite/settings.py	/^TIME_ZONE = 'Asia\/Shanghai'$/;"	v
+TestCase	mysite/books/tests.py	/^from django.test import TestCase$/;"	i
 TestCase	mysite/polls/tests.py	/^from django.test import TestCase$/;"	i
 USE_I18N	mysite/mysite/settings.py	/^USE_I18N = True$/;"	v
 USE_L10N	mysite/mysite/settings.py	/^USE_L10N = True$/;"	v
 USE_TZ	mysite/mysite/settings.py	/^USE_TZ = True$/;"	v
 WSGI_APPLICATION	mysite/mysite/settings.py	/^WSGI_APPLICATION = 'mysite.wsgi.application'$/;"	v
+__str__	mysite/books/models.py	/^    def __str__(self):$/;"	m	class:Author	file:
+__str__	mysite/books/models.py	/^    def __str__(self):$/;"	m	class:Book	file:
+__str__	mysite/books/models.py	/^    def __str__(self):$/;"	m	class:Publisher	file:
 __str__	mysite/polls/models.py	/^    def __str__(self):$/;"	m	class:Choice	file:
 __str__	mysite/polls/models.py	/^    def __str__(self):$/;"	m	class:Question	file:
+address	mysite/books/models.py	/^    address = models.CharField(max_length=50)$/;"	v	class:Publisher
+admin	mysite/books/admin.py	/^from django.contrib import admin$/;"	i
 admin	mysite/mysite/urls.py	/^from django.contrib import admin$/;"	i
 admin	mysite/polls/admin.py	/^from django.contrib import admin$/;"	i
+app_name	mysite/books/urls.py	/^app_name = 'books'$/;"	v
 app_name	mysite/polls/urls.py	/^app_name = 'polls'$/;"	v
 application	mysite/mysite/wsgi.py	/^application = get_wsgi_application()$/;"	v
+authors	mysite/books/models.py	/^    authors = models.ManyToManyField(Author)$/;"	v	class:Book
 choice_text	mysite/polls/models.py	/^    choice_text = models.CharField(max_length=200)$/;"	v	class:Choice
+city	mysite/books/models.py	/^    city = models.CharField(max_length=60)$/;"	v	class:Publisher
 context_object_name	mysite/polls/views.py	/^    context_object_name = 'latest_question_list'$/;"	v	class:IndexView
+country	mysite/books/models.py	/^    country = models.CharField(max_length=50)$/;"	v	class:Publisher
 create_question	mysite/polls/tests.py	/^def create_question(question_text, days):$/;"	f
+current_date	mysite/polls/views.py	/^def current_date(request):$/;"	f
+date_hierarchy	mysite/books/admin.py	/^    date_hierarchy = 'publication_date'$/;"	v	class:BookAdmin
 datetime	mysite/polls/models.py	/^import datetime$/;"	i
 datetime	mysite/polls/tests.py	/^import datetime$/;"	i
+datetime	mysite/polls/views.py	/^import datetime$/;"	i
+db	mysite/books/migrations/0001_initial.py	/^import django.db.models.deletion$/;"	i
 db	mysite/polls/migrations/0001_initial.py	/^import django.db.models.deletion$/;"	i
+deletion	mysite/books/migrations/0001_initial.py	/^import django.db.models.deletion$/;"	i
 deletion	mysite/polls/migrations/0001_initial.py	/^import django.db.models.deletion$/;"	i
+dependencies	mysite/books/migrations/0001_initial.py	/^    dependencies = [$/;"	v	class:Migration
 dependencies	mysite/polls/migrations/0001_initial.py	/^    dependencies = [$/;"	v	class:Migration
+django	mysite/books/migrations/0001_initial.py	/^import django.db.models.deletion$/;"	i
 django	mysite/manage.py	/^            import django$/;"	i
 django	mysite/polls/migrations/0001_initial.py	/^import django.db.models.deletion$/;"	i
+email	mysite/books/models.py	/^    email = models.EmailField(blank=True, verbose_name="e-mail")$/;"	v	class:Author
 execute_from_command_line	mysite/manage.py	/^        from django.core.management import execute_from_command_line$/;"	i
+field	mysite/books/migrations/0001_initial.py	/^            field=models.ForeignKey(on_delete=django.db.models.deletion.CASCADE, to='books.Publisher'),$/;"	v	class:Migration
 field	mysite/polls/migrations/0001_initial.py	/^            field=models.ForeignKey(on_delete=django.db.models.deletion.CASCADE, to='polls.Question'),$/;"	v	class:Migration
+fields	mysite/books/admin.py	/^    fields = ('title', 'authors', 'publisher')$/;"	v	class:BookAdmin
+fields	mysite/books/migrations/0001_initial.py	/^            fields=[$/;"	v	class:Migration
 fields	mysite/polls/migrations/0001_initial.py	/^            fields=[$/;"	v	class:Migration
+filter_horizontal	mysite/books/admin.py	/^    filter_horizontal = ('authors',)$/;"	v	class:BookAdmin
+first_name	mysite/books/models.py	/^    first_name = models.CharField(max_length=30)$/;"	v	class:Author
 generic	mysite/polls/views.py	/^from django.views import generic$/;"	i
-get_object_or_404	mysite/polls/views.py	/^from django.shortcuts import render, get_object_or_404$/;"	i
+get_object_or_404	mysite/polls/views.py	/^from django.shortcuts import render, get_object_or_404, render_to_response$/;"	i
 get_queryset	mysite/polls/views.py	/^    def get_queryset(self):$/;"	m	class:IndexView
 get_wsgi_application	mysite/mysite/wsgi.py	/^from django.core.wsgi import get_wsgi_application$/;"	i
 include	mysite/mysite/urls.py	/^from django.conf.urls import url, include$/;"	i
+index	mysite/books/views.py	/^def index(request):$/;"	f
+initial	mysite/books/migrations/0001_initial.py	/^    initial = True$/;"	v	class:Migration
 initial	mysite/polls/migrations/0001_initial.py	/^    initial = True$/;"	v	class:Migration
+last_name	mysite/books/models.py	/^    last_name = models.CharField(max_length=40)$/;"	v	class:Author
+list_display	mysite/books/admin.py	/^    list_display = ('first_name', 'last_name', 'email')$/;"	v	class:AuthorAdmin
+list_display	mysite/books/admin.py	/^    list_display = ('title', 'publisher', 'publication_date')$/;"	v	class:BookAdmin
+list_filter	mysite/books/admin.py	/^    list_filter = ('publication_date',)$/;"	v	class:BookAdmin
+meta	mysite/books/views.py	/^def meta(request):$/;"	f
+migrations	mysite/books/migrations/0001_initial.py	/^from django.db import migrations, models$/;"	i
 migrations	mysite/polls/migrations/0001_initial.py	/^from django.db import migrations, models$/;"	i
 model	mysite/polls/views.py	/^    model = Question$/;"	v	class:DetailView
 model	mysite/polls/views.py	/^    model = Question$/;"	v	class:ResultsView
+model_name	mysite/books/migrations/0001_initial.py	/^            model_name='book',$/;"	v	class:Migration
 model_name	mysite/polls/migrations/0001_initial.py	/^            model_name='choice',$/;"	v	class:Migration
+models	mysite/books/migrations/0001_initial.py	/^from django.db import migrations, models$/;"	i
+models	mysite/books/migrations/0001_initial.py	/^import django.db.models.deletion$/;"	i
+models	mysite/books/models.py	/^from django.db import models$/;"	i
 models	mysite/polls/migrations/0001_initial.py	/^from django.db import migrations, models$/;"	i
 models	mysite/polls/migrations/0001_initial.py	/^import django.db.models.deletion$/;"	i
 models	mysite/polls/models.py	/^from django.db import models$/;"	i
+name	mysite/books/apps.py	/^    name = 'books'$/;"	v	class:BooksConfig
+name	mysite/books/migrations/0001_initial.py	/^            name='Author',$/;"	v	class:Migration
+name	mysite/books/migrations/0001_initial.py	/^            name='Book',$/;"	v	class:Migration
+name	mysite/books/migrations/0001_initial.py	/^            name='Publisher',$/;"	v	class:Migration
+name	mysite/books/migrations/0001_initial.py	/^            name='publisher',$/;"	v	class:Migration
+name	mysite/books/models.py	/^    name = models.CharField(max_length=30)$/;"	v	class:Publisher
 name	mysite/polls/apps.py	/^    name = 'polls'$/;"	v	class:PollsConfig
 name	mysite/polls/migrations/0001_initial.py	/^            name='Choice',$/;"	v	class:Migration
 name	mysite/polls/migrations/0001_initial.py	/^            name='Question',$/;"	v	class:Migration
 name	mysite/polls/migrations/0001_initial.py	/^            name='question',$/;"	v	class:Migration
 name	mysite/polls/urls.py	/^        name='results'),$/;"	v
+operations	mysite/books/migrations/0001_initial.py	/^    operations = [$/;"	v	class:Migration
 operations	mysite/polls/migrations/0001_initial.py	/^    operations = [$/;"	v	class:Migration
+ordering	mysite/books/admin.py	/^    ordering = ('-publication_date',)$/;"	v	class:BookAdmin
+ordering	mysite/books/models.py	/^        ordering = ['name']$/;"	v	class:Publisher.Meta
 os	mysite/manage.py	/^import os$/;"	i
 os	mysite/mysite/settings.py	/^import os$/;"	i
 os	mysite/mysite/wsgi.py	/^import os$/;"	i
 pub_date	mysite/polls/models.py	/^    pub_date = models.DateTimeField('date published')$/;"	v	class:Question
+publication_date	mysite/books/models.py	/^    publication_date = models.DateField(blank=True, null=True)$/;"	v	class:Book
+publisher	mysite/books/models.py	/^    publisher = models.ForeignKey(Publisher)$/;"	v	class:Book
 question	mysite/polls/models.py	/^    question = models.ForeignKey(Question, on_delete=models.CASCADE)$/;"	v	class:Choice
 question_text	mysite/polls/models.py	/^    question_text = models.CharField(max_length=200)$/;"	v	class:Question
-render	mysite/polls/views.py	/^from django.shortcuts import render, get_object_or_404$/;"	i
+raw_id_fields	mysite/books/admin.py	/^    raw_id_fields = ('publisher',)$/;"	v	class:BookAdmin
+render	mysite/polls/views.py	/^from django.shortcuts import render, get_object_or_404, render_to_response$/;"	i
+render_to_response	mysite/books/views.py	/^from django.shortcuts import render_to_response$/;"	i
+render_to_response	mysite/polls/views.py	/^from django.shortcuts import render, get_object_or_404, render_to_response$/;"	i
 reverse	mysite/polls/tests.py	/^from django.urls import reverse$/;"	i
 reverse	mysite/polls/views.py	/^from django.urls import reverse$/;"	i
+search	mysite/books/views.py	/^def search(request):$/;"	f
+search_fields	mysite/books/admin.py	/^    search_fields = ('first_name', 'last_name')$/;"	v	class:AuthorAdmin
+search_form	mysite/books/views.py	/^def search_form(request):$/;"	f
+state_province	mysite/books/models.py	/^    state_province = models.CharField(max_length=30)$/;"	v	class:Publisher
 sys	mysite/manage.py	/^import sys$/;"	i
 template_name	mysite/polls/views.py	/^    template_name = 'polls\/detail.html'$/;"	v	class:DetailView
 template_name	mysite/polls/views.py	/^    template_name = 'polls\/index.html'$/;"	v	class:IndexView
@@ -95,18 +161,24 @@ test_was_published_recently_with_resent_question	mysite/polls/tests.py	/^    def
 timezone	mysite/polls/models.py	/^from django.utils import timezone$/;"	i
 timezone	mysite/polls/tests.py	/^from django.utils import timezone$/;"	i
 timezone	mysite/polls/views.py	/^from django.utils import timezone$/;"	i
+title	mysite/books/models.py	/^    title = models.CharField(max_length=100)$/;"	v	class:Book
 tribute	mysite/polls/views.py	/^def tribute(request):$/;"	f
+unicode_literals	mysite/books/migrations/0001_initial.py	/^from __future__ import unicode_literals$/;"	i
 unicode_literals	mysite/polls/admin.py	/^from __future__ import unicode_literals$/;"	i
 unicode_literals	mysite/polls/apps.py	/^from __future__ import unicode_literals$/;"	i
 unicode_literals	mysite/polls/migrations/0001_initial.py	/^from __future__ import unicode_literals$/;"	i
 unicode_literals	mysite/polls/models.py	/^from __future__ import unicode_literals$/;"	i
 unicode_literals	mysite/polls/tests.py	/^from __future__ import unicode_literals$/;"	i
 unicode_literals	mysite/polls/views.py	/^from __future__ import unicode_literals$/;"	i
+url	mysite/books/urls.py	/^from django.conf.urls import url$/;"	i
 url	mysite/mysite/urls.py	/^from django.conf.urls import url, include$/;"	i
 url	mysite/polls/urls.py	/^from django.conf.urls import url$/;"	i
+urlpatterns	mysite/books/urls.py	/^urlpatterns = [$/;"	v
 urlpatterns	mysite/mysite/urls.py	/^urlpatterns = [$/;"	v
 urlpatterns	mysite/polls/urls.py	/^urlpatterns = [$/;"	v
+views	mysite/books/urls.py	/^from . import views$/;"	i
 views	mysite/polls/urls.py	/^from . import views$/;"	i
 vote	mysite/polls/views.py	/^def vote(request, question_id):$/;"	f
 votes	mysite/polls/models.py	/^    votes = models.IntegerField(default=0)$/;"	v	class:Choice
 was_published_recently	mysite/polls/models.py	/^    def was_published_recently(self):$/;"	m	class:Question
+website	mysite/books/models.py	/^    website = models.URLField()$/;"	v	class:Publisher
