@@ -20,7 +20,7 @@ def search_form(request):
 
 
 def search(request):
-    error = False
+    errors = []
     if 'q' in request.GET:
         q = request.GET['q']
         if q:
@@ -28,6 +28,8 @@ def search(request):
             return render_to_response('books/search_result.html',
                                       {'books': books,
                                        'query': q})
+        elif len(q) > 20:
+            errors.append('Enter a search term.')
         else:
-            error = True
-    return render_to_response('books/search_form.html', {'error': error})
+            errors.append('Please enter at most 20 characters.')
+    return render_to_response('books/search_form.html', {'errors': errors})
