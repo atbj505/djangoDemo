@@ -14,14 +14,18 @@ AuthorAdmin	mysite/books/admin.py	/^class AuthorAdmin(admin.ModelAdmin):$/;"	c
 BASE_DIR	mysite/mysite/settings.py	/^BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))$/;"	v
 Book	mysite/books/admin.py	/^from books.models import Publisher, Author, Book$/;"	i
 Book	mysite/books/models.py	/^class Book(models.Model):$/;"	c
+Book	mysite/books/views.py	/^from books.models import Book$/;"	i
 BookAdmin	mysite/books/admin.py	/^class BookAdmin(admin.ModelAdmin):$/;"	c
 BooksConfig	mysite/books/apps.py	/^class BooksConfig(AppConfig):$/;"	c
 Choice	mysite/polls/models.py	/^class Choice(models.Model):$/;"	c
 Choice	mysite/polls/views.py	/^from polls.models import Question, Choice$/;"	i
+ContactForm	mysite/books/forms.py	/^class ContactForm(forms.Form):$/;"	c
+ContactForm	mysite/books/views.py	/^from books.forms import ContactForm$/;"	i
 DATABASES	mysite/mysite/settings.py	/^DATABASES = {$/;"	v
 DEBUG	mysite/mysite/settings.py	/^DEBUG = True$/;"	v
 DetailView	mysite/polls/views.py	/^class DetailView(generic.DetailView):$/;"	c
-HttpResponse	mysite/books/views.py	/^from django.http import HttpResponse$/;"	i
+HttpResponse	mysite/books/views.py	/^from django.http import HttpResponse, HttpResponseRedirect$/;"	i
+HttpResponseRedirect	mysite/books/views.py	/^from django.http import HttpResponse, HttpResponseRedirect$/;"	i
 HttpResponseRedirect	mysite/polls/views.py	/^from django.http import HttpResponseRedirect$/;"	i
 INSTALLED_APPS	mysite/mysite/settings.py	/^INSTALLED_APPS = [$/;"	v
 IndexView	mysite/polls/views.py	/^class IndexView(generic.ListView):$/;"	c
@@ -65,9 +69,13 @@ application	mysite/mysite/wsgi.py	/^application = get_wsgi_application()$/;"	v
 authors	mysite/books/models.py	/^    authors = models.ManyToManyField(Author)$/;"	v	class:Book
 choice_text	mysite/polls/models.py	/^    choice_text = models.CharField(max_length=200)$/;"	v	class:Choice
 city	mysite/books/models.py	/^    city = models.CharField(max_length=60)$/;"	v	class:Publisher
+clean_message	mysite/books/forms.py	/^    def clean_message(self):$/;"	m	class:ContactForm
+contact	mysite/books/views.py	/^def contact(request):$/;"	f
+contact_thanks	mysite/books/views.py	/^def contact_thanks(request):$/;"	f
 context_object_name	mysite/polls/views.py	/^    context_object_name = 'latest_question_list'$/;"	v	class:IndexView
 country	mysite/books/models.py	/^    country = models.CharField(max_length=50)$/;"	v	class:Publisher
 create_question	mysite/polls/tests.py	/^def create_question(question_text, days):$/;"	f
+csrf_exempt	mysite/books/views.py	/^from django.views.decorators.csrf import csrf_exempt$/;"	i
 current_date	mysite/polls/views.py	/^def current_date(request):$/;"	f
 date_hierarchy	mysite/books/admin.py	/^    date_hierarchy = 'publication_date'$/;"	v	class:BookAdmin
 datetime	mysite/polls/models.py	/^import datetime$/;"	i
@@ -82,6 +90,7 @@ dependencies	mysite/polls/migrations/0001_initial.py	/^    dependencies = [$/;"	
 django	mysite/books/migrations/0001_initial.py	/^import django.db.models.deletion$/;"	i
 django	mysite/manage.py	/^            import django$/;"	i
 django	mysite/polls/migrations/0001_initial.py	/^import django.db.models.deletion$/;"	i
+email	mysite/books/forms.py	/^    email = forms.EmailField(required=False, label='Your e-mail address')$/;"	v	class:ContactForm
 email	mysite/books/models.py	/^    email = models.EmailField(blank=True, verbose_name="e-mail")$/;"	v	class:Author
 execute_from_command_line	mysite/manage.py	/^        from django.core.management import execute_from_command_line$/;"	i
 field	mysite/books/migrations/0001_initial.py	/^            field=models.ForeignKey(on_delete=django.db.models.deletion.CASCADE, to='books.Publisher'),$/;"	v	class:Migration
@@ -91,6 +100,7 @@ fields	mysite/books/migrations/0001_initial.py	/^            fields=[$/;"	v	clas
 fields	mysite/polls/migrations/0001_initial.py	/^            fields=[$/;"	v	class:Migration
 filter_horizontal	mysite/books/admin.py	/^    filter_horizontal = ('authors',)$/;"	v	class:BookAdmin
 first_name	mysite/books/models.py	/^    first_name = models.CharField(max_length=30)$/;"	v	class:Author
+forms	mysite/books/forms.py	/^from django import forms$/;"	i
 generic	mysite/polls/views.py	/^from django.views import generic$/;"	i
 get_object_or_404	mysite/polls/views.py	/^from django.shortcuts import render, get_object_or_404, render_to_response$/;"	i
 get_queryset	mysite/polls/views.py	/^    def get_queryset(self):$/;"	m	class:IndexView
@@ -103,6 +113,7 @@ last_name	mysite/books/models.py	/^    last_name = models.CharField(max_length=4
 list_display	mysite/books/admin.py	/^    list_display = ('first_name', 'last_name', 'email')$/;"	v	class:AuthorAdmin
 list_display	mysite/books/admin.py	/^    list_display = ('title', 'publisher', 'publication_date')$/;"	v	class:BookAdmin
 list_filter	mysite/books/admin.py	/^    list_filter = ('publication_date',)$/;"	v	class:BookAdmin
+message	mysite/books/forms.py	/^    message = forms.CharField(widget=forms.Textarea)$/;"	v	class:ContactForm
 meta	mysite/books/views.py	/^def meta(request):$/;"	f
 migrations	mysite/books/migrations/0001_initial.py	/^from django.db import migrations, models$/;"	i
 migrations	mysite/polls/migrations/0001_initial.py	/^from django.db import migrations, models$/;"	i
@@ -116,17 +127,22 @@ models	mysite/books/models.py	/^from django.db import models$/;"	i
 models	mysite/polls/migrations/0001_initial.py	/^from django.db import migrations, models$/;"	i
 models	mysite/polls/migrations/0001_initial.py	/^import django.db.models.deletion$/;"	i
 models	mysite/polls/models.py	/^from django.db import models$/;"	i
+my_view1	mysite/books/views.py	/^def my_view1(request, *args, **kwargs):$/;"	f
+my_view2	mysite/books/views.py	/^def my_view2(request, *args, **kwargs):$/;"	f
 name	mysite/books/apps.py	/^    name = 'books'$/;"	v	class:BooksConfig
 name	mysite/books/migrations/0001_initial.py	/^            name='Author',$/;"	v	class:Migration
 name	mysite/books/migrations/0001_initial.py	/^            name='Book',$/;"	v	class:Migration
 name	mysite/books/migrations/0001_initial.py	/^            name='Publisher',$/;"	v	class:Migration
 name	mysite/books/migrations/0001_initial.py	/^            name='publisher',$/;"	v	class:Migration
 name	mysite/books/models.py	/^    name = models.CharField(max_length=30)$/;"	v	class:Publisher
+name	mysite/books/urls.py	/^        name='requires_login')$/;"	v
+name	mysite/books/urls.py	/^        name='requires_login'),$/;"	v
 name	mysite/polls/apps.py	/^    name = 'polls'$/;"	v	class:PollsConfig
 name	mysite/polls/migrations/0001_initial.py	/^            name='Choice',$/;"	v	class:Migration
 name	mysite/polls/migrations/0001_initial.py	/^            name='Question',$/;"	v	class:Migration
 name	mysite/polls/migrations/0001_initial.py	/^            name='question',$/;"	v	class:Migration
 name	mysite/polls/urls.py	/^        name='results'),$/;"	v
+new_view	mysite/books/views.py	/^    def new_view(request, *args, **kwargs):$/;"	f	function:requires_login
 operations	mysite/books/migrations/0001_initial.py	/^    operations = [$/;"	v	class:Migration
 operations	mysite/polls/migrations/0001_initial.py	/^    operations = [$/;"	v	class:Migration
 ordering	mysite/books/admin.py	/^    ordering = ('-publication_date',)$/;"	v	class:BookAdmin
@@ -143,12 +159,14 @@ raw_id_fields	mysite/books/admin.py	/^    raw_id_fields = ('publisher',)$/;"	v	c
 render	mysite/polls/views.py	/^from django.shortcuts import render, get_object_or_404, render_to_response$/;"	i
 render_to_response	mysite/books/views.py	/^from django.shortcuts import render_to_response$/;"	i
 render_to_response	mysite/polls/views.py	/^from django.shortcuts import render, get_object_or_404, render_to_response$/;"	i
+requires_login	mysite/books/views.py	/^def requires_login(view):$/;"	f
 reverse	mysite/polls/tests.py	/^from django.urls import reverse$/;"	i
 reverse	mysite/polls/views.py	/^from django.urls import reverse$/;"	i
 search	mysite/books/views.py	/^def search(request):$/;"	f
 search_fields	mysite/books/admin.py	/^    search_fields = ('first_name', 'last_name')$/;"	v	class:AuthorAdmin
 search_form	mysite/books/views.py	/^def search_form(request):$/;"	f
 state_province	mysite/books/models.py	/^    state_province = models.CharField(max_length=30)$/;"	v	class:Publisher
+subject	mysite/books/forms.py	/^    subject = forms.CharField(max_length=100)$/;"	v	class:ContactForm
 sys	mysite/manage.py	/^import sys$/;"	i
 template_name	mysite/polls/views.py	/^    template_name = 'polls\/detail.html'$/;"	v	class:DetailView
 template_name	mysite/polls/views.py	/^    template_name = 'polls\/index.html'$/;"	v	class:IndexView
