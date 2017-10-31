@@ -1,8 +1,9 @@
-from django.shortcuts import render_to_response
 from django.http import HttpResponse, HttpResponseRedirect
-from books.models import Book
+from django.shortcuts import render_to_response
 from django.views.decorators.csrf import csrf_exempt
+
 from books.forms import ContactForm
+from books.models import Book
 
 
 def index(request):

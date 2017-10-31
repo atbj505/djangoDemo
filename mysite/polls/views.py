@@ -1,13 +1,15 @@
 # -*- coding: utf-8 -*-
 from __future__ import unicode_literals
 
-from django.shortcuts import render, get_object_or_404, render_to_response
-from django.http import HttpResponseRedirect
-from django.urls import reverse
-from django.views import generic
-from polls.models import Question, Choice
-from django.utils import timezone
 import datetime
+
+from django.http import HttpResponseRedirect
+from django.shortcuts import get_object_or_404, render, render_to_response
+from django.urls import reverse
+from django.utils import timezone
+from django.views import generic
+
+from polls.models import Choice, Question
 
 
 class IndexView(generic.ListView):
