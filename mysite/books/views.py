@@ -12,8 +12,9 @@ def index(request):
 
 def meta(request):
     template_name = 'books/meta.html'
-    return render_to_response(template_name,
-                              {'meta': sorted(request.META.items())})
+    return render_to_response(template_name, {
+        'meta': sorted(request.META.items())
+    })
 
 
 def search_form(request):
@@ -26,9 +27,10 @@ def search(request):
         q = request.GET['q']
         if q:
             books = Book.objects.filter(title__icontains=q)
-            return render_to_response('books/search_result.html',
-                                      {'books': books,
-                                       'query': q})
+            return render_to_response('books/search_result.html', {
+                'books': books,
+                'query': q
+            })
         elif len(q) > 20:
             errors.append('Enter a search term.')
         else:
