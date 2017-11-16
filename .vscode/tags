@@ -1,0 +1,229 @@
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_FILE_SORTED	1	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_PROGRAM_AUTHOR	Darren Hiebert	/dhiebert@users.sourceforge.net/
+!_TAG_PROGRAM_NAME	Exuberant Ctags	//
+!_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
+!_TAG_PROGRAM_VERSION	5.8	//
+0001_initial.py	../mysite/books/migrations/0001_initial.py	1;"	kind:file	line:1
+0001_initial.py	../mysite/polls/migrations/0001_initial.py	1;"	kind:file	line:1
+ALLOWED_HOSTS	../mysite/mysite/settings.py	/^ALLOWED_HOSTS = []$/;"	kind:variable	line:28
+AUTH_PASSWORD_VALIDATORS	../mysite/mysite/settings.py	/^AUTH_PASSWORD_VALIDATORS = [$/;"	kind:variable	line:96
+AppConfig	../mysite/books/apps.py	/^from django.apps import AppConfig$/;"	kind:namespace	line:1
+AppConfig	../mysite/polls/apps.py	/^from django.apps import AppConfig$/;"	kind:namespace	line:4
+Author	../mysite/books/admin.py	/^from books.models import Author, Book, Publisher$/;"	kind:namespace	line:3
+Author	../mysite/books/models.py	/^class Author(models.Model):$/;"	kind:class	line:19
+AuthorAdmin	../mysite/books/admin.py	/^class AuthorAdmin(admin.ModelAdmin):$/;"	kind:class	line:6
+BASE_DIR	../mysite/mysite/settings.py	/^BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))$/;"	kind:variable	line:16
+Book	../mysite/books/admin.py	/^from books.models import Author, Book, Publisher$/;"	kind:namespace	line:3
+Book	../mysite/books/models.py	/^class Book(models.Model):$/;"	kind:class	line:28
+Book	../mysite/books/views.py	/^from books.models import Book$/;"	kind:namespace	line:6
+BookAdmin	../mysite/books/admin.py	/^class BookAdmin(admin.ModelAdmin):$/;"	kind:class	line:11
+BooksConfig	../mysite/books/apps.py	/^class BooksConfig(AppConfig):$/;"	kind:class	line:4
+Choice	../mysite/polls/models.py	/^class Choice(models.Model):$/;"	kind:class	line:24
+Choice	../mysite/polls/views.py	/^from polls.models import Choice, Question$/;"	kind:namespace	line:12
+ContactForm	../mysite/books/forms.py	/^class ContactForm(forms.Form):$/;"	kind:class	line:7
+ContactForm	../mysite/books/views.py	/^from books.forms import ContactForm$/;"	kind:namespace	line:5
+DATABASES	../mysite/mysite/settings.py	/^DATABASES = {$/;"	kind:variable	line:78
+DEBUG	../mysite/mysite/settings.py	/^DEBUG = True$/;"	kind:variable	line:26
+DetailView	../mysite/polls/views.py	/^class DetailView(generic.DetailView):$/;"	kind:class	line:36
+HttpResponse	../mysite/books/views.py	/^from django.http import HttpResponse, HttpResponseRedirect$/;"	kind:namespace	line:1
+HttpResponseRedirect	../mysite/books/views.py	/^from django.http import HttpResponse, HttpResponseRedirect$/;"	kind:namespace	line:1
+HttpResponseRedirect	../mysite/polls/views.py	/^from django.http import HttpResponseRedirect$/;"	kind:namespace	line:6
+INSTALLED_APPS	../mysite/mysite/settings.py	/^INSTALLED_APPS = [$/;"	kind:variable	line:33
+IndexView	../mysite/polls/views.py	/^class IndexView(generic.ListView):$/;"	kind:class	line:15
+LANGUAGE_CODE	../mysite/mysite/settings.py	/^LANGUAGE_CODE = 'en-us'$/;"	kind:variable	line:115
+MIDDLEWARE	../mysite/mysite/settings.py	/^MIDDLEWARE = [$/;"	kind:variable	line:44
+Meta	../mysite/books/models.py	/^    class Meta:$/;"	kind:class	line:15
+Migration	../mysite/books/migrations/0001_initial.py	/^class Migration(migrations.Migration):$/;"	kind:class	line:9
+Migration	../mysite/polls/migrations/0001_initial.py	/^class Migration(migrations.Migration):$/;"	kind:class	line:9
+PollsConfig	../mysite/polls/apps.py	/^class PollsConfig(AppConfig):$/;"	kind:class	line:7
+Publisher	../mysite/books/admin.py	/^from books.models import Author, Book, Publisher$/;"	kind:namespace	line:3
+Publisher	../mysite/books/models.py	/^class Publisher(models.Model):$/;"	kind:class	line:4
+Question	../mysite/polls/models.py	/^class Question(models.Model):$/;"	kind:class	line:12
+Question	../mysite/polls/tests.py	/^from polls.models import Question$/;"	kind:namespace	line:10
+Question	../mysite/polls/views.py	/^from polls.models import Choice, Question$/;"	kind:namespace	line:12
+QuestionIndexViewTests	../mysite/polls/tests.py	/^class QuestionIndexViewTests(TestCase):$/;"	kind:class	line:38
+QuestionModelTests	../mysite/polls/tests.py	/^class QuestionModelTests(TestCase):$/;"	kind:class	line:13
+ROOT_URLCONF	../mysite/mysite/settings.py	/^ROOT_URLCONF = 'mysite.urls'$/;"	kind:variable	line:54
+ResultsView	../mysite/polls/views.py	/^class ResultsView(generic.DetailView):$/;"	kind:class	line:41
+SECRET_KEY	../mysite/mysite/settings.py	/^SECRET_KEY = 'w%d$(sn-v2pah9v4&p_@4p_$5!k^uc4sufq67i%$8@az_9+zrj'$/;"	kind:variable	line:23
+STATIC_URL	../mysite/mysite/settings.py	/^STATIC_URL = '\/static\/'$/;"	kind:variable	line:129
+TEMPLATES	../mysite/mysite/settings.py	/^TEMPLATES = [$/;"	kind:variable	line:56
+TIME_ZONE	../mysite/mysite/settings.py	/^TIME_ZONE = 'Asia\/Shanghai'$/;"	kind:variable	line:117
+TestCase	../mysite/books/tests.py	/^from django.test import TestCase$/;"	kind:namespace	line:1
+TestCase	../mysite/polls/tests.py	/^from django.test import TestCase$/;"	kind:namespace	line:6
+USE_I18N	../mysite/mysite/settings.py	/^USE_I18N = True$/;"	kind:variable	line:119
+USE_L10N	../mysite/mysite/settings.py	/^USE_L10N = True$/;"	kind:variable	line:121
+USE_TZ	../mysite/mysite/settings.py	/^USE_TZ = True$/;"	kind:variable	line:123
+WSGI_APPLICATION	../mysite/mysite/settings.py	/^WSGI_APPLICATION = 'mysite.wsgi.application'$/;"	kind:variable	line:72
+__init__.py	../mysite/books/__init__.py	1;"	kind:file	line:1
+__init__.py	../mysite/books/migrations/__init__.py	1;"	kind:file	line:1
+__init__.py	../mysite/mysite/__init__.py	1;"	kind:file	line:1
+__init__.py	../mysite/polls/__init__.py	1;"	kind:file	line:1
+__init__.py	../mysite/polls/migrations/__init__.py	1;"	kind:file	line:1
+__str__	../mysite/books/models.py	/^    def __str__(self):$/;"	kind:member	line:12
+__str__	../mysite/books/models.py	/^    def __str__(self):$/;"	kind:member	line:24
+__str__	../mysite/books/models.py	/^    def __str__(self):$/;"	kind:member	line:34
+__str__	../mysite/polls/models.py	/^    def __str__(self):$/;"	kind:member	line:16
+__str__	../mysite/polls/models.py	/^    def __str__(self):$/;"	kind:member	line:29
+address	../mysite/books/models.py	/^    address = models.CharField(max_length=50)$/;"	kind:variable	line:6
+admin	../mysite/books/admin.py	/^from django.contrib import admin$/;"	kind:namespace	line:1
+admin	../mysite/mysite/urls.py	/^from django.contrib import admin$/;"	kind:namespace	line:17
+admin	../mysite/polls/admin.py	/^from django.contrib import admin$/;"	kind:namespace	line:4
+admin.py	../mysite/books/admin.py	1;"	kind:file	line:1
+admin.py	../mysite/polls/admin.py	1;"	kind:file	line:1
+app_name	../mysite/books/urls.py	/^app_name = 'books'$/;"	kind:variable	line:8
+app_name	../mysite/polls/urls.py	/^app_name = 'polls'$/;"	kind:variable	line:8
+application	../mysite/mysite/wsgi.py	/^application = get_wsgi_application()$/;"	kind:variable	line:16
+apps.py	../mysite/books/apps.py	1;"	kind:file	line:1
+apps.py	../mysite/polls/apps.py	1;"	kind:file	line:1
+authors	../mysite/books/models.py	/^    authors = models.ManyToManyField(Author)$/;"	kind:variable	line:30
+choice_text	../mysite/polls/models.py	/^    choice_text = models.CharField(max_length=200)$/;"	kind:variable	line:26
+city	../mysite/books/models.py	/^    city = models.CharField(max_length=60)$/;"	kind:variable	line:7
+clean_message	../mysite/books/forms.py	/^    def clean_message(self):$/;"	kind:member	line:12
+contact	../mysite/books/views.py	/^def contact(request):$/;"	kind:function	line:42
+contact_thanks	../mysite/books/views.py	/^def contact_thanks(request):$/;"	kind:function	line:54
+context_object_name	../mysite/polls/views.py	/^    context_object_name = 'latest_question_list'$/;"	kind:variable	line:17
+country	../mysite/books/models.py	/^    country = models.CharField(max_length=50)$/;"	kind:variable	line:9
+create_question	../mysite/polls/tests.py	/^def create_question(question_text, days):$/;"	kind:function	line:33
+csrf_exempt	../mysite/books/views.py	/^from django.views.decorators.csrf import csrf_exempt$/;"	kind:namespace	line:3
+current_date	../mysite/polls/views.py	/^def current_date(request):$/;"	kind:function	line:30
+date_hierarchy	../mysite/books/admin.py	/^    date_hierarchy = 'publication_date'$/;"	kind:variable	line:14
+datetime	../mysite/polls/models.py	/^import datetime$/;"	kind:namespace	line:4
+datetime	../mysite/polls/tests.py	/^import datetime$/;"	kind:namespace	line:4
+datetime	../mysite/polls/views.py	/^import datetime$/;"	kind:namespace	line:4
+db	../mysite/books/migrations/0001_initial.py	/^import django.db.models.deletion$/;"	kind:namespace	line:5
+db	../mysite/polls/migrations/0001_initial.py	/^import django.db.models.deletion$/;"	kind:namespace	line:5
+deletion	../mysite/books/migrations/0001_initial.py	/^import django.db.models.deletion$/;"	kind:namespace	line:5
+deletion	../mysite/polls/migrations/0001_initial.py	/^import django.db.models.deletion$/;"	kind:namespace	line:5
+dependencies	../mysite/books/migrations/0001_initial.py	/^    dependencies = [$/;"	kind:variable	line:13
+dependencies	../mysite/polls/migrations/0001_initial.py	/^    dependencies = [$/;"	kind:variable	line:13
+django	../mysite/books/migrations/0001_initial.py	/^import django.db.models.deletion$/;"	kind:namespace	line:5
+django	../mysite/manage.py	/^            import django$/;"	kind:namespace	line:14
+django	../mysite/polls/migrations/0001_initial.py	/^import django.db.models.deletion$/;"	kind:namespace	line:5
+email	../mysite/books/forms.py	/^    email = forms.EmailField(required=False, label='Your e-mail address')$/;"	kind:variable	line:9
+email	../mysite/books/models.py	/^    email = models.EmailField(blank=True, verbose_name="e-mail")$/;"	kind:variable	line:22
+execute_from_command_line	../mysite/manage.py	/^        from django.core.management import execute_from_command_line$/;"	kind:namespace	line:8
+field	../mysite/books/migrations/0001_initial.py	/^            field=models.ForeignKey(on_delete=django.db.models.deletion.CASCADE, to='books.Publisher'),$/;"	kind:variable	line:50
+field	../mysite/polls/migrations/0001_initial.py	/^            field=models.ForeignKey(on_delete=django.db.models.deletion.CASCADE, to='polls.Question'),$/;"	kind:variable	line:36
+fields	../mysite/books/admin.py	/^    fields = ('title', 'authors', 'publisher')$/;"	kind:variable	line:16
+fields	../mysite/books/migrations/0001_initial.py	/^            fields=[$/;"	kind:variable	line:19
+fields	../mysite/books/migrations/0001_initial.py	/^            fields=[$/;"	kind:variable	line:28
+fields	../mysite/books/migrations/0001_initial.py	/^            fields=[$/;"	kind:variable	line:37
+fields	../mysite/polls/migrations/0001_initial.py	/^            fields=[$/;"	kind:variable	line:19
+fields	../mysite/polls/migrations/0001_initial.py	/^            fields=[$/;"	kind:variable	line:27
+filter_horizontal	../mysite/books/admin.py	/^    filter_horizontal = ('authors',)$/;"	kind:variable	line:17
+first_name	../mysite/books/models.py	/^    first_name = models.CharField(max_length=30)$/;"	kind:variable	line:20
+forms	../mysite/books/forms.py	/^from django import forms$/;"	kind:namespace	line:4
+forms.py	../mysite/books/forms.py	1;"	kind:file	line:1
+generic	../mysite/polls/views.py	/^from django.views import generic$/;"	kind:namespace	line:10
+get_object_or_404	../mysite/polls/views.py	/^from django.shortcuts import get_object_or_404, render, render_to_response$/;"	kind:namespace	line:7
+get_queryset	../mysite/polls/views.py	/^    def get_queryset(self):$/;"	kind:member	line:19
+get_wsgi_application	../mysite/mysite/wsgi.py	/^from django.core.wsgi import get_wsgi_application$/;"	kind:namespace	line:12
+include	../mysite/mysite/urls.py	/^from django.conf.urls import include, url$/;"	kind:namespace	line:16
+index	../mysite/books/views.py	/^def index(request):$/;"	kind:function	line:9
+initial	../mysite/books/migrations/0001_initial.py	/^    initial = True$/;"	kind:variable	line:11
+initial	../mysite/polls/migrations/0001_initial.py	/^    initial = True$/;"	kind:variable	line:11
+last_name	../mysite/books/models.py	/^    last_name = models.CharField(max_length=40)$/;"	kind:variable	line:21
+list_display	../mysite/books/admin.py	/^    list_display = ('first_name', 'last_name', 'email')$/;"	kind:variable	line:7
+list_display	../mysite/books/admin.py	/^    list_display = ('title', 'publisher', 'publication_date')$/;"	kind:variable	line:12
+list_filter	../mysite/books/admin.py	/^    list_filter = ('publication_date',)$/;"	kind:variable	line:13
+manage.py	../mysite/manage.py	1;"	kind:file	line:1
+message	../mysite/books/forms.py	/^    message = forms.CharField(widget=forms.Textarea)$/;"	kind:variable	line:10
+meta	../mysite/books/views.py	/^def meta(request):$/;"	kind:function	line:13
+migrations	../mysite/books/migrations/0001_initial.py	/^from django.db import migrations, models$/;"	kind:namespace	line:6
+migrations	../mysite/polls/migrations/0001_initial.py	/^from django.db import migrations, models$/;"	kind:namespace	line:6
+model	../mysite/polls/views.py	/^    model = Question$/;"	kind:variable	line:37
+model	../mysite/polls/views.py	/^    model = Question$/;"	kind:variable	line:42
+model_name	../mysite/books/migrations/0001_initial.py	/^            model_name='book',$/;"	kind:variable	line:48
+model_name	../mysite/polls/migrations/0001_initial.py	/^            model_name='choice',$/;"	kind:variable	line:34
+models	../mysite/books/migrations/0001_initial.py	/^from django.db import migrations, models$/;"	kind:namespace	line:6
+models	../mysite/books/migrations/0001_initial.py	/^import django.db.models.deletion$/;"	kind:namespace	line:5
+models	../mysite/books/models.py	/^from django.db import models$/;"	kind:namespace	line:1
+models	../mysite/polls/migrations/0001_initial.py	/^from django.db import migrations, models$/;"	kind:namespace	line:6
+models	../mysite/polls/migrations/0001_initial.py	/^import django.db.models.deletion$/;"	kind:namespace	line:5
+models	../mysite/polls/models.py	/^from django.db import models$/;"	kind:namespace	line:6
+models.py	../mysite/books/models.py	1;"	kind:file	line:1
+models.py	../mysite/polls/models.py	1;"	kind:file	line:1
+my_view1	../mysite/books/views.py	/^def my_view1(request, *args, **kwargs):$/;"	kind:function	line:68
+my_view2	../mysite/books/views.py	/^def my_view2(request, *args, **kwargs):$/;"	kind:function	line:73
+name	../mysite/books/apps.py	/^    name = 'books'$/;"	kind:variable	line:5
+name	../mysite/books/migrations/0001_initial.py	/^            name='Author',$/;"	kind:variable	line:18
+name	../mysite/books/migrations/0001_initial.py	/^            name='Book',$/;"	kind:variable	line:27
+name	../mysite/books/migrations/0001_initial.py	/^            name='Publisher',$/;"	kind:variable	line:36
+name	../mysite/books/migrations/0001_initial.py	/^            name='publisher',$/;"	kind:variable	line:49
+name	../mysite/books/models.py	/^    name = models.CharField(max_length=30)$/;"	kind:variable	line:5
+name	../mysite/books/urls.py	/^        name='requires_login')$/;"	kind:variable	line:21
+name	../mysite/books/urls.py	/^        name='requires_login'),$/;"	kind:variable	line:18
+name	../mysite/polls/apps.py	/^    name = 'polls'$/;"	kind:variable	line:8
+name	../mysite/polls/migrations/0001_initial.py	/^            name='Choice',$/;"	kind:variable	line:18
+name	../mysite/polls/migrations/0001_initial.py	/^            name='Question',$/;"	kind:variable	line:26
+name	../mysite/polls/migrations/0001_initial.py	/^            name='question',$/;"	kind:variable	line:35
+name	../mysite/polls/urls.py	/^        name='results'),$/;"	kind:variable	line:16
+new_view	../mysite/books/views.py	/^    def new_view(request, *args, **kwargs):$/;"	kind:function	line:59
+operations	../mysite/books/migrations/0001_initial.py	/^    operations = [$/;"	kind:variable	line:16
+operations	../mysite/polls/migrations/0001_initial.py	/^    operations = [$/;"	kind:variable	line:16
+ordering	../mysite/books/admin.py	/^    ordering = ('-publication_date',)$/;"	kind:variable	line:15
+ordering	../mysite/books/models.py	/^        ordering = ['name']$/;"	kind:variable	line:16
+os	../mysite/manage.py	/^import os$/;"	kind:namespace	line:2
+os	../mysite/mysite/settings.py	/^import os$/;"	kind:namespace	line:13
+os	../mysite/mysite/wsgi.py	/^import os$/;"	kind:namespace	line:10
+pub_date	../mysite/polls/models.py	/^    pub_date = models.DateTimeField('date published')$/;"	kind:variable	line:14
+publication_date	../mysite/books/models.py	/^    publication_date = models.DateField(blank=True, null=True)$/;"	kind:variable	line:32
+publisher	../mysite/books/models.py	/^    publisher = models.ForeignKey(Publisher)$/;"	kind:variable	line:31
+question	../mysite/polls/models.py	/^    question = models.ForeignKey(Question, on_delete=models.CASCADE)$/;"	kind:variable	line:25
+question_text	../mysite/polls/models.py	/^    question_text = models.CharField(max_length=200)$/;"	kind:variable	line:13
+raw_id_fields	../mysite/books/admin.py	/^    raw_id_fields = ('publisher',)$/;"	kind:variable	line:18
+render	../mysite/polls/views.py	/^from django.shortcuts import get_object_or_404, render, render_to_response$/;"	kind:namespace	line:7
+render_to_response	../mysite/books/views.py	/^from django.shortcuts import render_to_response$/;"	kind:namespace	line:2
+render_to_response	../mysite/polls/views.py	/^from django.shortcuts import get_object_or_404, render, render_to_response$/;"	kind:namespace	line:7
+requires_login	../mysite/books/views.py	/^def requires_login(view):$/;"	kind:function	line:58
+reverse	../mysite/polls/tests.py	/^from django.urls import reverse$/;"	kind:namespace	line:7
+reverse	../mysite/polls/views.py	/^from django.urls import reverse$/;"	kind:namespace	line:8
+search	../mysite/books/views.py	/^def search(request):$/;"	kind:function	line:24
+search_fields	../mysite/books/admin.py	/^    search_fields = ('first_name', 'last_name')$/;"	kind:variable	line:8
+search_form	../mysite/books/views.py	/^def search_form(request):$/;"	kind:function	line:20
+settings.py	../mysite/mysite/settings.py	1;"	kind:file	line:1
+state_province	../mysite/books/models.py	/^    state_province = models.CharField(max_length=30)$/;"	kind:variable	line:8
+subject	../mysite/books/forms.py	/^    subject = forms.CharField(max_length=100)$/;"	kind:variable	line:8
+sys	../mysite/manage.py	/^import sys$/;"	kind:namespace	line:3
+template_name	../mysite/polls/views.py	/^    template_name = 'polls\/detail.html'$/;"	kind:variable	line:38
+template_name	../mysite/polls/views.py	/^    template_name = 'polls\/index.html'$/;"	kind:variable	line:16
+template_name	../mysite/polls/views.py	/^    template_name = 'polls\/results.html'$/;"	kind:variable	line:43
+test_no_question	../mysite/polls/tests.py	/^    def test_no_question(self):$/;"	kind:member	line:39
+test_past_question	../mysite/polls/tests.py	/^    def test_past_question(self):$/;"	kind:member	line:45
+test_was_published_recently_with_future_question	../mysite/polls/tests.py	/^    def test_was_published_recently_with_future_question(self):$/;"	kind:member	line:16
+test_was_published_recently_with_old_question	../mysite/polls/tests.py	/^    def test_was_published_recently_with_old_question(self):$/;"	kind:member	line:21
+test_was_published_recently_with_resent_question	../mysite/polls/tests.py	/^    def test_was_published_recently_with_resent_question(self):$/;"	kind:member	line:26
+tests.py	../mysite/books/tests.py	1;"	kind:file	line:1
+tests.py	../mysite/polls/tests.py	1;"	kind:file	line:1
+timezone	../mysite/polls/models.py	/^from django.utils import timezone$/;"	kind:namespace	line:7
+timezone	../mysite/polls/tests.py	/^from django.utils import timezone$/;"	kind:namespace	line:8
+timezone	../mysite/polls/views.py	/^from django.utils import timezone$/;"	kind:namespace	line:9
+title	../mysite/books/models.py	/^    title = models.CharField(max_length=100)$/;"	kind:variable	line:29
+tribute	../mysite/polls/views.py	/^def tribute(request):$/;"	kind:function	line:25
+unicode_literals	../mysite/books/migrations/0001_initial.py	/^from __future__ import unicode_literals$/;"	kind:namespace	line:3
+unicode_literals	../mysite/polls/admin.py	/^from __future__ import unicode_literals$/;"	kind:namespace	line:2
+unicode_literals	../mysite/polls/apps.py	/^from __future__ import unicode_literals$/;"	kind:namespace	line:2
+unicode_literals	../mysite/polls/migrations/0001_initial.py	/^from __future__ import unicode_literals$/;"	kind:namespace	line:3
+unicode_literals	../mysite/polls/models.py	/^from __future__ import unicode_literals$/;"	kind:namespace	line:2
+unicode_literals	../mysite/polls/tests.py	/^from __future__ import unicode_literals$/;"	kind:namespace	line:2
+unicode_literals	../mysite/polls/views.py	/^from __future__ import unicode_literals$/;"	kind:namespace	line:2
+url	../mysite/books/urls.py	/^from django.conf.urls import url$/;"	kind:namespace	line:4
+url	../mysite/mysite/urls.py	/^from django.conf.urls import include, url$/;"	kind:namespace	line:16
+url	../mysite/polls/urls.py	/^from django.conf.urls import url$/;"	kind:namespace	line:4
+urlpatterns	../mysite/books/urls.py	/^urlpatterns = [$/;"	kind:variable	line:9
+urlpatterns	../mysite/mysite/urls.py	/^urlpatterns = [$/;"	kind:variable	line:19
+urlpatterns	../mysite/polls/urls.py	/^urlpatterns = [$/;"	kind:variable	line:9
+urls.py	../mysite/books/urls.py	1;"	kind:file	line:1
+urls.py	../mysite/mysite/urls.py	1;"	kind:file	line:1
+urls.py	../mysite/polls/urls.py	1;"	kind:file	line:1
+views	../mysite/books/urls.py	/^from . import views$/;"	kind:namespace	line:6
+views	../mysite/polls/urls.py	/^from . import views$/;"	kind:namespace	line:6
+views.py	../mysite/books/views.py	1;"	kind:file	line:1
+views.py	../mysite/polls/views.py	1;"	kind:file	line:1
+vote	../mysite/polls/views.py	/^def vote(request, question_id):$/;"	kind:function	line:46
+votes	../mysite/polls/models.py	/^    votes = models.IntegerField(default=0)$/;"	kind:variable	line:27
+was_published_recently	../mysite/polls/models.py	/^    def was_published_recently(self):$/;"	kind:member	line:19
+website	../mysite/books/models.py	/^    website = models.URLField()$/;"	kind:variable	line:10
+wsgi.py	../mysite/mysite/wsgi.py	1;"	kind:file	line:1
