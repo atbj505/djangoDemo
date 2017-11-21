@@ -1,9 +1,11 @@
 from django.http import HttpResponse, HttpResponseRedirect
 from django.shortcuts import render_to_response
 from django.views.decorators.csrf import csrf_exempt
+from rest_framework import viewsets, permissions
 
 from books.forms import ContactForm
-from books.models import Book
+from books.models import Author, Book, Publisher
+from books.serializers import AuthorSerializer, BookSerializer, PublisherSerializer
 
 
 def index(request):
@@ -73,3 +75,21 @@ def my_view1(request, *args, **kwargs):
 def my_view2(request, *args, **kwargs):
     print('my_view2')
     return HttpResponse('view2')
+
+
+class AuthorViewSet(viewsets.ModelViewSet):
+    queryset = Author.objects.all().order_by('-first_name')
+    serializer_class = AuthorSerializer
+    permission_classes = (permissions.AllowAny,)
+
+
+class BookViewSet(viewsets.ModelViewSet):
+    queryset = Book.objects.all().order_by('-publication_date')
+    serializer_class = BookSerializer
+    permission_classes = (permissions.AllowAny,)
+
+
+class PublisherViewSet(viewsets.ModelViewSet):
+    queryset = Publisher.objects.all()
+    serializer_class = PublisherSerializer
+    permission_classes = (permissions.AllowAny,)
